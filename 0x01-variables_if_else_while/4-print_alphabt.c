@@ -11,7 +11,7 @@
 
 	for (letter = 97; letter <= 122; letter++)
 	{
-	if (letter != 103 && letter != 100)
+	if (letter != 101 && letter != 113)
 		putchar(letter);
 	}
 
