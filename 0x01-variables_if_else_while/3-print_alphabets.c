@@ -9,12 +9,12 @@ int main(void)
 {
 	int letter;
 
-	for (letter = 65; letter <= 90; letter++)
+	for (letter = 97; letter <= 122; letter++)
 	{
 		putchar(letter);
 	}
 
-	for (letter = 97; letter <= 122; letter++)
+	for (letter = 65; letter <= 90; letter++)
 	{
 		putchar(letter);
 	}
