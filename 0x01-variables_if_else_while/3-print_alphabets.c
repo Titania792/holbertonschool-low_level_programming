@@ -1,14 +1,23 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
+* main - Entry Point
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-		int n;
+	int letter;
 
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */
-						return (0);
+	for (letter = 65; letter <= 90; letter++)
+	{
+		putchar(letter);
+	}
+
+	for (letter = 97; letter <= 122; letter++)
+	{
+		putchar(letter);
+	}
+	putchar('\n');
+	return (0);
 }
