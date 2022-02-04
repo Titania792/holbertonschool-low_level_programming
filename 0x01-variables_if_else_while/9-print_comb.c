@@ -16,8 +16,10 @@ int main(void)
 		xd = letter + 48;
 	putchar(xd);
 	if (letter < 9)
+	{
 	putchar(',');
 	putchar(' ');
+	}
 	}
 	putchar('\n');
 	return (0);
