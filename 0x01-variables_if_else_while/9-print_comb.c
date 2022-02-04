@@ -11,7 +11,7 @@ int main(void)
 	int a = 9;
 	int xd;
 
-	for (letter = 48; letter <= a; letter++)
+	for (letter = 0; letter <= a; letter++)
 	{
 		xd = letter + 48;
 	putchar(xd);
