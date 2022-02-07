@@ -7,20 +7,14 @@
 *
 * Return: Always 0 (Success)
 */
-int main(void)
-{
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char letter;
 
 	letter = 'a';
 	while (letter <= 'z')
-{
+  {
 	putchar(letter);
 	letter++;
-}
-}
-
-	putchar('\n');
-	return (0);
+  }
 }
