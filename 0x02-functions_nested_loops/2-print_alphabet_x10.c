@@ -3,10 +3,11 @@
 /**
 * print_alphabet_x10 - abcd
 */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
-	int letter;
+	char x;
 
-	for (letter = 1; letter <= 10; ++letter)
-	putchar('\n');
+	for (x = 1; x <= 10; ++x)
+	_putchar(x);
+	_putchar('\n');
 }
