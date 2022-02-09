@@ -1,20 +1,22 @@
 #include "main.h"
 
 /**
- *print_most_numbers - asas
- *
- *
- * Return:asd
+*more_numbers - asdf
+*
+* Return:ghjk
 */
-void print_most_numbers(void)
+void more_numbers(void)
 {
-	int num;
+int num, i;
 
-	for (num = 0; num <= 9; num++)
-	{
-		if (num != 2 && num != 4)
-			_putchar((num % 10) + '0');
-	}
-
-	_putchar('\n');
+for (i = 1; i <= 10; i++)
+{
+for (num = 0; num <= 14; num++)
+{
+if (num > 9)
+_putchar((num / 10) + '0');
+_putchar((num % 10) + '0');
+}
+_putchar('\n');
+}
 }
