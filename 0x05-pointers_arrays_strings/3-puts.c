@@ -1,11 +1,15 @@
 #include "main.h"
 
 /**
-*swap_int - tjyu
-*@a: tyui
-*@b: tyuip
+*_puts - tjyu
+*@i: tyui
+*@str: tyuip
+*Return: rtyuio
 */
-void _puts(char *str);
+void _puts(char *str)
 {
-	_puts(*str)
-
+	int i;
+	i = *str;
+	_putchar(i);
+	_putchar('\n');
+}
