@@ -4,12 +4,10 @@
 /**
 * _strlen - drtyu
 *@s: tyui
-* Return: rtyui
+* Return: 0
 */
 int _strlen(char *s)
 {
-	int i;
-
-	i = *s;
-	return (i);
+	size_t strlen(const char *s);
+	return (strlen(s));
 }
