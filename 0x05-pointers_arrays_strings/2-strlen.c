@@ -2,9 +2,9 @@
 #include <string.h>
 
 /**
-*_strlen - tjyu
+* _strlen - drtyu
 *@s: tyui
-*
+* Return: rtyui
 */
 int _strlen(char *s)
 {
