@@ -2,8 +2,7 @@
 
 /**
 *_puts - tjyu
-*@i: tyui
-*@str: tyuip
+*@str: string to print
 *Return: rtyuio
 */
 void _puts(char *str)
@@ -12,8 +11,8 @@ void _puts(char *str)
 
 	while (*(str + i) != 0)
 	{
-	_putchar(*(str + i));
-	i++;
+		_putchar(*(str + i));
+		i++;
 	}
 	_putchar('\n');
 }
