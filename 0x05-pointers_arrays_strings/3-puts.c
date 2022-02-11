@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*_puts - tjyu
+*_puts - function that prints a string
 *@str: string to print
 *Return: rtyuio
 */
