@@ -2,7 +2,7 @@
 
 /**
 *print_number - function that prints an integer.
-*@a: fghji
+*@n: fghji
 *Return: 0
 *
 */
