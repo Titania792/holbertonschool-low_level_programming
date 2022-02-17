@@ -8,26 +8,17 @@
 */
 char *leet(char *a)
 {
-	int b = 0;
+	int b, c;
+	char d[12] = "aAeEoOtTlL";
+	char e[12] = "4433007711";
 
-	while (a[b] != '\0')
+	for (b = 0; a[b] != '\0'; b++)
 	{
-		if (a[b] == 97 || a[b] == 65)
-			a[b] = 52;
-
-		if (a[b] == 101 || a[b] == 69)
-			a[b] = 51;
-
-		if (a[b] == 79 || a[b] == 111)
-			a[b] = 48;
-
-		if (a[b] == 116 || a[b] == 84)
-			a[b] = 55;
-
-		if (a[b] == 108 || a[b] == 76)
-			a[b] = 49;
-
-		b++;
+		for (c = 0; c < 10; c++)
+		{
+			if (a[b] == d[c])
+				a[b] = e[c];
+		}
 	}
 	return (a);
 }
