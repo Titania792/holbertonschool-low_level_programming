@@ -7,14 +7,17 @@
 *Return: If n does not have a natural square root,
 *the function should return -1
 */
-int _con(int y, int n)
+int _con(int n, int x)
 {
-	if (y * y == n)
-		return (y);
-	if (y * y > n)
+	if (x * x == n)
+		return (x);
+
+	if (x * x > n)
 		return (-1);
-	return (_con(n, y + 1));
+
+	return (_con(n, x + 1));
 }
+
 
 /**
 *_sqrt_recursion - function that returns the
@@ -26,5 +29,5 @@ int _con(int y, int n)
 */
 int _sqrt_recursion(int n)
 {
-		return (_con(n, 0));
+	return (_con(n, 0));
 }
