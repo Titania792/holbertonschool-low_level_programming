@@ -11,7 +11,7 @@ int _con(int y, int n)
 {
 	if (y * y == n)
 		return (y);
-	else if (y * y > n)
+	if (y * y > n)
 		return (-1);
 	return (_con(n, y + 1));
 }
