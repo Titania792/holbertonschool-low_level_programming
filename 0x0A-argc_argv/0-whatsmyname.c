@@ -2,9 +2,11 @@
 #include <stdlib.h>
 
 /**
-*@argc: argument count inside argv
-*@argv: argument value (array)
+* main - aaa
+* @argc: argument count inside argument value
+* @argv: argument value (array)
 *
+* Return: aaa
 */
 int main(int argc __attribute__((unused)), char *argv[])
 {
