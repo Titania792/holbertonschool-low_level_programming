@@ -7,6 +7,7 @@
 *main - aaa
 *@argc: aaa
 *@argv: aaa
+*Return: aaa
 */
 int main(int argc, char *argv[])
 {
