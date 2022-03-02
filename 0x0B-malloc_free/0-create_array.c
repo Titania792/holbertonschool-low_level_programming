@@ -5,6 +5,8 @@
 *initializes it with a specific char.
 *@size: tamaño del array.
 *@c: specific char.
+*Return: Returns NULL if size = 0
+*Returns a pointer to the array, or NULL if it fails
 */
 char *create_array(unsigned int size, char c)
 {
@@ -16,8 +18,11 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	ar = malloc(size * sizeof(*ar));
-	if (ar == NULL)
+
+		if (ar == '\0')
+	{
 			return (NULL);
+	}
 	for (i = 0; i < size; i++)
 		ar[i] = c;
 
