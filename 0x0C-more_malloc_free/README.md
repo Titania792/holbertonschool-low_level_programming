@@ -1,4 +1,4 @@
-_Mandatory Tasks
+Mandatory Tasks
 
 
 0. Trust no one
@@ -19,7 +19,7 @@ Write a function that concatenates two strings.
 Write a function that allocates memory for an array, using malloc.
 
 
-3. array _ range
+3. array_range
 
 
 Write a function that creates an array of integers.
@@ -28,7 +28,7 @@ Write a function that creates an array of integers.
 Advanced Tasks
 
 
-4. . _ realloc
+4. _realloc
 
 
 Write a function that reallocates a memory block using malloc and free
