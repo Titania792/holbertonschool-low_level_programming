@@ -4,8 +4,10 @@
 #include <stdio.h>
 
 /**
-*listint_len - function that returns the number of elements in a linked listint_t list.
+*listint_len - function that returns the number of elements in
+*a linked listint_t list.
 *@h: pointer
+*Return: the number of elements in a linked listint_t list.
 *
 *Auth: Titania792
 */
