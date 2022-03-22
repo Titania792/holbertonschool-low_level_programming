@@ -10,47 +10,34 @@
 */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	unsigned int size = getsize(*head);
+    listint_t *currentnode, *nextnode;
 
-    listint_t *newNode = malloc(sizeof(listint_t));
-    newNode->n = n;
-    newNode->next = NULL;
+	currentnode = *head;
+	nextnode = malloc(sizeof(listint_t));
 
-	if(idx > size)
+	if (nextnode == NULL)
 		return (NULL);
-	else if(idx == 0)
+
+	nextnode->n = n;
+
+	if (idx == 0)
 	{
-		newNode->next = *head;
-		*head = newNode;
+		nextnode->next = currentnode;
+		*head = nextnode;
+		return (*head);
     }
-	else
-    {
-        listint_t *possi = *head;
 
-        while(--n)
-            possi = possi->next;
-
-        newNode->next= possi->next;
-        possi->next = newNode;
-    }
-	return (newNode);
-}
-
-/**
-*getsize - get the list size
-*@head: pointer
-*Return: size
-*
-*Auth: Titania792
-*/
-int getsize(listint_t *head)
-{
-	unsigned int size = 0;
-
-    while (head != NULL)
-    {
-        head = head->next;
-        size++;
-    }
-    return(size);
+	while (idx > 1)
+	{
+		currentnode = currentnode->next;
+		idx--;
+		if (currentnode == NULL)
+		{
+			free(nextnode);
+			return (NULL);
+		}
+	}
+	nextnode->next = currentnode->next;
+	currentnode->next = nextnode;
+	return (nextnode);
 }
