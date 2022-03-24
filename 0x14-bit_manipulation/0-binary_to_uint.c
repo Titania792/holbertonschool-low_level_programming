@@ -24,7 +24,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[i] >= 'a' && b[i] <= 'z')
+		if ((b[i] >= 'a' && b[i] <= 'z') || (b[i] >= 'Z' && b[i] <= 'Z'))
 			return (0);
 	}
 	return (n);
