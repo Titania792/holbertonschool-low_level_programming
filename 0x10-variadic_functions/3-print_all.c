@@ -7,35 +7,38 @@
 
 void print_all(const char * const format, ...)
 {
+	int i, x;
 	va_list args;
-	int x, y;
 	char *separator = "";
 
-	print_t type[] = {
-			{'c', print_char},
-			{'i', print_int},
-			{'f', print_float},
-			{'s', print_string},
-			{'\0', NULL}
+
+	print_t op[] = {
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string},
+		{'\0', NULL}
 	};
 
 	va_start(args, format);
 
-	x = 0;
-	while (format != NULL && format[x] != '\0')
+	i = 0;
+	while (format != NULL && format[i] != '\0')
 	{
-		y = 0;
-		while (type[y].ty != '\0')
+		x = 0;
+		while (op[x].type != '\0')
 		{
-			if (type[y].ty == format[x])
+			if (op[x].type == format[i])
 			{
 				printf("%s", separator);
-				type[y].f(args);
+				op[x].func(args);
 				separator = ", ";
 			}
-			y++;
+
+			x++;
 		}
-		x++;
+
+		i++;
 	}
 	va_end(args);
 

@@ -9,10 +9,10 @@
 *@print: aa
 *@ty: aa
 */
-typedef struct pr
+typedef struct print
 {
-  char ty;
-  void (*f)(va_list);
+  char type;
+  void (*func)(va_list);
 } print_t;
 
 int sum_them_all(const unsigned int n, ...);
