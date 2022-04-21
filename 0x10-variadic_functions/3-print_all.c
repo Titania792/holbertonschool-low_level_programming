@@ -88,6 +88,5 @@ void print_string(va_list s)
 		printf("(nil)");
 		return;
 	}
-	else
-		printf("%s", string);
+	printf("%s", string);
 }
