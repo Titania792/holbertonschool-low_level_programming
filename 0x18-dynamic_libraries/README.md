@@ -51,9 +51,9 @@ Write a blog post describing the differences between static and dynamic librarie
 - What are the advantages and drawbacks of each of them
 Your posts should have examples and at least one picture, at the top. Publish your blog post on Medium or LinkedIn, and share it at least on LinkedIn.
 
-My Blog->[Differences between static and dynamic libraries](https://www.linkedin.com/pulse/static-library-vs-dynamic-tatiana-fern%C3%A1ndez?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BxTRT2XuSSVuNXRSazptkZA%3D%3D)
+My Blog->[Static library vs Dynamic library](https://www.linkedin.com/pulse/static-library-vs-dynamic-tatiana-fern%C3%A1ndez?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BxTRT2XuSSVuNXRSazptkZA%3D%3D)
 
-# Advanced Task
+## Advanced Task
 
 3. Let's call C functions from Python `(100-operations.so)`
 
