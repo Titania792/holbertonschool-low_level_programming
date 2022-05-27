@@ -6,7 +6,7 @@
  * @key: key to set
  * @value: value to set
  * Return: 1 if key was found and value was set, 0 otherwise
- */ 
+ */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = 0;
